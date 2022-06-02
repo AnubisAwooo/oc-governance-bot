@@ -4,10 +4,10 @@ version = "0.0.0"
 edition = "2018"
 
 [lib]
-crate-type = ["cdylib"]
+crate-type = ["cdylib"] # ? 还不知道干嘛用的
 
 [dependencies]
-ic-cdk = "0.4.0"
-ic-cdk-macros = "0.4.0"
-serde = "1.0.136"
-candid = "0.7.10"
+ic-cdk = "0.4.0" # IC的Canister开发者工具包 https://crates.io/crates/ic-cdk
+ic-cdk-macros = "0.4.0" # 本包提供了属性宏？，可以在普通的 rust 函数上添加注解使之变成一个 canister 的公开接口。https://crates.io/crates/ic-cdk-macros
+serde = "1.0.136" # 序列化和反序列化框架 https://crates.io/crates/serde/1.0.137
+candid = "0.7.10" # IC上运行的Cnister之间交互使用的接口描述语言 本包是一个Candid的序列化反序列化库。可以用二进制或文本格式在Rust值和Candid之间进行无缝转换。https://crates.io/crates/candid
