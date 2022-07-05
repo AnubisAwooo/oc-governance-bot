@@ -38,4 +38,4 @@ pub const FIVE_MINUTE: u64 = 5 * ONE_MINUTE;
 
 pub const PROCESS_INTERVAL: u64 = FIVE_MINUTE; // 执行间隔 5 分钟
 
-pub const INITIAL_PROPOSAL_LIMIT: u32 = 1; // ? 初始化时提案数量？
+pub const INITIAL_PROPOSAL_LIMIT: u32 = 1; // ? 应该是获取提案的数量限制
